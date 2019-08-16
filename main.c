@@ -44,16 +44,21 @@
 				for(i=0;i<=a;i++)
 				{
 					LED0=0;
+					LED1=0;
 					delay(i);
 					LED0=1;
+					LED1=1;
 					delay(a-i);
 				if(KEY0==0)
 					break;
 			}
 				for(i=0;i<b;i++)
-			{LED0=0;
+			{
+				LED0=0;
+				LED1=0;
 				delay(b-i);
 				LED0=1;
+				LED1=1;
 				delay(i);
 				if(KEY0==0)
 					break;
